@@ -8,12 +8,27 @@
 
 Console.Write("Введите натуральное число -> ");
 int num = int.Parse(Console.ReadLine());
-int sum = 0;
-for (int i = 1; i <= num; i++)
+
+int GetSumNumbers(int number)
 {
-    sum = sum + i;
+    int sum = 0;
+    for (int i = 1; i <= num; i++)
+    {
+        sum = sum + i;
+    }
+    return sum;
 }
-Console.WriteLine($"Сумма чисел от 1 до {num} равна {sum}");
+
+// int sum = 0;
+// for (int i = 1; i <= num; i++)
+// {
+//     sum = sum + i;
+// }
+
+int SumResult = GetSumNumbers(num);
+Console.WriteLine($"Сумма чисел от 1 до {num} равна {SumResult}");
+
+//Console.WriteLine($"Сумма чисел от 1 до {num} равна {sum}");
 
 
 
